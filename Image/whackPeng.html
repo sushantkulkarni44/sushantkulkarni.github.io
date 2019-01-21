@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <style>
+   [class *="div"]
+    {
+        background-image: url('./images/mound.png');
+        width: 30%;
+        height:30vh;
+        /* border: 1px solid gray; */
+        background-repeat: no-repeat;
+        float:left;
+    }
+   
+    .container
+    {
+        background-color: lightblue;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: block;
+    }
+    h1
+    {
+        color: rgb(5, 69, 90);
+        font-size: 300%;
+        padding-top: 1%;
+        margin: 0%;
+        margin-bottom: -3rem;
+        font-family: 'Fredericka the Great', cursive;
+
+    }
+    article
+    {
+        margin-left: 15%;
+    }
+    [class *="div"]:hover
+    {
+        background-image: url('./images/mound_hover.png'); 
+    }
+    .animate{
+                position: relative;
+                animation: scaleupNdown 2s infinite;
+            }
+             @keyframes scaleupNdown{
+            0%{
+               transform:  scale(.8);
+            }
+            50%{
+                  transform:  scale(1.5);                  
+               }
+              100%{
+                     transform:  scale(.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <center><h1>FIND THE PENGUIN</h1></center>
+    <article id="article">
+        <div id="info0" class="div0" onclick="randImage(this)"></div>
+        <div id="info1" class="div1" onclick="randImage(this)"></div>
+        <div id="info2" class="div2" onclick="randImage(this)"></div>
+        <div id="info3" class="div3" onclick="randImage(this)"></div>
+        <div id="info4" class="div4" onclick="randImage(this)"></div>
+        <div id="info5" class="div5" onclick="randImage(this)"></div>
+        <div id="info6" class="div6" onclick="randImage(this)"></div>
+        <div id="info7" class="div7" onclick="randImage(this)"></div>
+        <div id="info8" class="div8" onclick="randImage(this)"></div>
+       
+    </article>
+    </section>
+    <div id="yeti" style="position: absolute; width: 100%; height: 100%; display: none; background: lightblue !important; z-index: 5; margin-top: -45rem; ">
+            <img class="animate" style="margin-left: 40%; margin-top: 15%;" src="./images/penguin8.png">
+            <h1  style="color: crimson;margin-left: 38%;">GOT YOU.!!</h1><br><br><br>
+            <button style="width: 15rem; height: 50px;  position: relative; bottom: -25%;margin-left: 38%; background-color: rgb(1, 184, 1); color: white;"  onclick="location.reload();">Restart</button>	
+        </div>
+</body>
+<script>
+
+
+var indexArray=[];
+var i;
+function getrand()
+{
+    return Math.floor((Math.random() * 9));
+}
+
+   
+function checkrand(number)
+{
+    var flag=false;
+        for (i=0;i<=indexArray.length;i++)
+        {
+            if (indexArray[i]== number)
+            {
+                flag=true;
+            }
+        }
+        return flag;
+}
+    
+  
+function randImage(ele)
+{
+    var randnum=getrand();
+    if(!checkrand(randnum))
+    {
+        if(randnum==8)
+        {
+            document.getElementById("article").style.display="none"; 
+            document.getElementById("yeti").style.display="block"; 
+            ele.style.backgroundImage=" url('./images/penguin"+randnum+".png')"
+            return true;
+        }
+        else
+        {
+            ele.removeAttribute("onclick");
+            ele.style.backgroundImage=" url('./images/penguin"+randnum+".png')"
+            indexArray.push(randnum);
+            return true;
+        }
+    }
+    else
+    {
+        changeimage(ele);
+    }
+}
+</script>
+</html>
