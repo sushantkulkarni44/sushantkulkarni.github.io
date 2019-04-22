@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="C:\WSA_Bootstrap_Course_Material\TemplatePrograms\css\bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="C:\WSA_Bootstrap_Course_Material\TemplatePrograms\css\bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
     <!-------- Google Fonts ------>
     <link href="https://fonts.googleapis.com/css?family=Vibur" rel="stylesheet">
@@ -16,7 +29,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="js/functionallity.js"></script>
+    <!-- <script src="js/functionallity.js"></script> -->
 
     <style>
         #navbar
@@ -84,6 +97,18 @@
     {
       width: 23ch;
     }
+  }
+  @media screen and (max-width:576px)
+  {
+      #name1
+      {
+          font-size: 10vw;
+          padding-top: 40%;
+      }
+      .div1
+      {
+          background: url("./Image/pexels-photo-129208.jpeg")
+      }
   }
     .div2
     {
@@ -548,6 +573,7 @@ font-weight: bold;
     <script>
     
     </script>
+    
 </head>
 <body> 
 
@@ -587,7 +613,37 @@ font-weight: bold;
                 </div>
                 <!-- Collapse End -->
             </nav>
-            <center><h1 class="" id="name1">Front End Web Developer..!</h1></center>
+            <br><br><br>
+            <center> <p id="paraaa" class="ex1 pt-5 mt-5">Front End</p></center>
+           <center> <p id="paraaa" class="ex2">Web Developer</p></center>
+            <center> <p id="" class="desc">- sushant -</p></center>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		    <script src="textyle.min.js"></script>
+		    <script>
+			$(window).on('load',function(){
+				//simple use
+				$('.ex1').textyle();
+				$('.desc').textyle();
+				//you can select options or add callback
+				$('.ex2').textyle({
+									duration : 1000,
+									delay : 200,
+									easing : 'swing',
+									callback : function(){
+										$(this).css({
+											color : 'coral',
+											transition : '1s',
+										});
+										$('.desc').css({'opacity':1, color:'blue'});
+									}
+								});
+			});
+		    </script>
+           
+
+
+
+
         </div>
         </div>
   <div class="div2" id="about">
@@ -658,7 +714,7 @@ font-weight: bold;
       <section class="div3-1 container">
           <p>Wanna Know More About Me...</p>
           <p>Download My Resume</p>
-          <center><a href="./Image/Sushant Resume.docx" width="30" height="20" download><img src="./Image/download-button (2).png" alt="" > </a></center>
+          <center><a href="./Image/Sushant_CV.docx" width="30" height="20" download><img src="./Image/download-button (2).png" alt="" > </a></center>
       </section>
   </div>
  
@@ -738,16 +794,16 @@ font-weight: bold;
                 </div>
   
           
-    <div alt="" class="box filter  javascript">
+    <!-- <div alt="" class="box filter  javascript">
             <div class="imgBox">
                     <img src="./Image/todo_3.jpg" alt="">
                 </div>
                 <div class="details" onmouseover="hover11()" onmouseout="hover12()">
-                        <a id="se6" href="../../ToDo_List.html" class="fa fa-search"></a><br>
+                        <a id="se6" href="" class="fa fa-search"></a><br>
                         <p>Todo App</p>
                   <span class="small">javascript + Git</span>
                     </div>
-            </div>  
+            </div>   -->
   
           
         <div alt="" class="box filter  javascript">
@@ -755,7 +811,7 @@ font-weight: bold;
                         <img src="./Image/penguin.PNG" alt="">
                     </div>
                     <div class="details" onmouseover="hover13()" onmouseout="hover14()">
-                            <a id="se7" href="../../Whack_panguin/whackPeng.html " class="fa fa-search"></a><br>
+                            <a id="se7" href="https://sushantkulkarni44.github.io/PenguinGame/" class="fa fa-search"></a><br>
                             <p>Penguin Game</p>
                   <span class="small">javascript + Git</span>
                         </div>
@@ -767,7 +823,7 @@ font-weight: bold;
                     <img src="./Image/todo_2.jpg" alt="">
                 </div>
                 <div class="details" onmouseover="hover15()" onmouseout="hover16()">
-                        <a id="se8" href="#" class="fa fa-search"></a><br>
+                        <a id="se8" href="https://todolistdeployment.firebaseapp.com" class="fa fa-search"></a><br>
                         <p>Portfolio</p>
                         <span class="small">Angular 6 + Firebase Cloud Firestore + Git</span>
                     </div>
@@ -933,6 +989,11 @@ function scrollFunction() {
     document.getElementById("navbar").style.backgroundColor = "oranged";
   }
 }
+
+
+
+
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7pjwcCEgbHYsS3TISDe9iiQgTA2irFwk&callback=myMap"></script>
 

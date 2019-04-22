@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="C:\WSA_Bootstrap_Course_Material\TemplatePrograms\css\bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
@@ -572,6 +573,7 @@ font-weight: bold;
     <script>
     
     </script>
+    
 </head>
 <body> 
 
@@ -611,7 +613,37 @@ font-weight: bold;
                 </div>
                 <!-- Collapse End -->
             </nav>
-            <center><h1 class="" id="name1">Front End Web Developer..!</h1></center>
+            <br><br><br>
+            <center> <p id="paraaa" class="ex1 pt-5 mt-5">Front End</p></center>
+           <center> <p id="paraaa" class="ex2">Web Developer</p></center>
+            <center> <p id="" class="desc">- sushant -</p></center>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		    <script src="textyle.min.js"></script>
+		    <script>
+			$(window).on('load',function(){
+				//simple use
+				$('.ex1').textyle();
+				$('.desc').textyle();
+				//you can select options or add callback
+				$('.ex2').textyle({
+									duration : 1000,
+									delay : 200,
+									easing : 'swing',
+									callback : function(){
+										$(this).css({
+											color : 'coral',
+											transition : '1s',
+										});
+										$('.desc').css({'opacity':1, color:'blue'});
+									}
+								});
+			});
+		    </script>
+           
+
+
+
+
         </div>
         </div>
   <div class="div2" id="about">
@@ -957,6 +989,11 @@ function scrollFunction() {
     document.getElementById("navbar").style.backgroundColor = "oranged";
   }
 }
+
+
+
+
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7pjwcCEgbHYsS3TISDe9iiQgTA2irFwk&callback=myMap"></script>
 
