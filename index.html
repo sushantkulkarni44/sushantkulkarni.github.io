@@ -35,7 +35,7 @@
         #navbar
         {
             position: fixed;
-            background:linear-gradient(to right,rgb(0, 0, 0),rgb(124, 1, 97));
+            /* background:linear-gradient(to right,rgb(0, 0, 0),rgb(46, 1, 36)); */
             width: 100%;
             transition: all 0.4s ease-in-out;
             top: 0;
@@ -586,7 +586,7 @@ font-weight: bold;
       width: 100vw;
       height: auto;
       position: relative;
-      margin-top: 55px;
+      /* margin-top: 55px; */
       
   }
     </style>
@@ -1031,13 +1031,15 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     document.getElementById("navbar").style.padding = "10px 10px";
     // document.getElementById("logo").style.fontSize = "25px";
+    document.getElementById("navbar").style.backgroundColor = "rgb(46, 1, 36)"
     document.getElementById("navbar").style.borderRadius = "10px 10px 10px oranged";
   } else {
-    document.getElementById("navbar").style.padding = "18px 10px";
+    document.getElementById("navbar").style.padding = "10px 10px";
     document.getElementById("logo").style.fontSize = "35px";
+    document.getElementById("navbar").style.backgroundColor = ""
     document.getElementById("navbar").style.backgroundColor = "oranged";
   }
 }
