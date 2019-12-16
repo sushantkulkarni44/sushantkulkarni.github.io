@@ -568,6 +568,16 @@ font-weight: bold;
     background-color: white;
     transition: all 0.8s;
 }
+
+#loading {
+    background: url('./Image/35771931234507.564a1d2403b3a.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    z-index: 9999999;
+}
   
     </style>
     <script>
@@ -576,6 +586,7 @@ font-weight: bold;
     
 </head>
 <body> 
+        <div id="loading"></div>
 
     <div class="div1">
         <div class="div1-1">
@@ -615,7 +626,7 @@ font-weight: bold;
             </nav>
             <br><br><br>
             <center> <p id="paraaa" class="ex1 pt-5 mt-5">Front End</p></center>
-           <center> <p id="paraaa" class="ex2">Web Developer</p></center>
+            <center> <p id="paraaa" class="ex2">Web Developer</p></center>
             <center> <p id="" class="desc">- sushant -</p></center>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		    <script src="textyle.min.js"></script>
@@ -638,6 +649,14 @@ font-weight: bold;
 									}
 								});
 			});
+
+            function hideLoader() {
+    $('#loading').hide();
+}
+
+$(window).ready(hideLoader);
+
+setTimeout(hideLoader, 20 * 1000);
 		    </script>
            
 
