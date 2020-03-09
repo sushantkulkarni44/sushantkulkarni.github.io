@@ -5,928 +5,1507 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="C:\WSA_Bootstrap_Course_Material\TemplatePrograms\css\bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-
-    <!-------- Google Fonts ------>
-    <link href="https://fonts.googleapis.com/css?family=Vibur" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Vibur" rel="stylesheet">
-
-    <!-- Jquery plugins -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <!-- <script src="js/functionallity.js"></script> -->
 
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Great+Vibes|Kaushan+Script|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Great+Vibes|Kaushan+Script|Lobster|Pacifico" rel="stylesheet">
     <style>
-        #navbar
-        {
-            position: fixed;
-            /* background:linear-gradient(to right,rgb(0, 0, 0),rgb(46, 1, 36)); */
-            width: 100%;
-            transition: all 0.4s ease-in-out;
-            top: 0;
-            z-index: 99;
-            overflow: hidden;
-        }
-    #brand
+    .bg-black
     {
-        color: deeppink;
-        /* font-family: 'Vibur', cursive; */
-        /* font-family: 'Gloria Hallelujah', cursive; */
-
+        background-color: black;
     }
-    .navbar-nav
+    *
     {
-        margin-left: 40vw;
-        color: white;
+        font-size: 16px;
+    }
+    .margin-5
+    {
+        margin-left:40vw;
+        border: 1px solid white;  
+    }
+    .myvideo
+    {
+    position: relative;
+    top: 0;
+    left: 0;
+    top: 0;
+    bottom:0;
+    width: 100%; 
+    height: 100%;
+    width: auto;
+    height: auto;
+    transform: scaleX(1) scaleY(2.2); 
+    overflow: hidden;
+    transform-origin: right center ;
+    
         
     }
-    .navbar-nav a
-    {
-        color: white;
-        margin-left: 1.5vw;
-    }
-    .navbar-nav a:hover
-    {
-        color: rgb(209, 155, 124);
-    }
+  
     .div1
     {
-        width: 100%;
+        position:relative;
+        overflow: hidden;
+        transform: translateY(-58px);
         height: 100vh;
-        background: url("./Image/Pexels Videos 1738594.mp4");
-        position: absolute;
-        top: 0;
-        left: 0;
-        
+        z-index: 0;
+    }
+    nav
+    {
+        z-index: 5;
+        background: transparent; 
+    }
+    @media only screen and (max-width:992px)
+    {
+        nav
+        {
+            background-color: black;
+        }
+        #mymenu ul li a
+        {
+            border-bottom: none;
+        }
+        .margin-5
+        {
+            margin-left:15px;
+            padding: 0;
+            border: 0px solid white;  
+        }
     }
     .div1-1
     {
-        width: 100%;
-        height: 132vh;
-        /* background-color: rgba(78, 0, 55, 0.8); */
+        background: linear-gradient(to right top, rgba(108, 142, 192, 0.9),20%, rgba(1, 22, 56, 0.9));
+        /* transform: translateY(-58px); */
+        /* height: 100vh; */
+        
     }
-    #name1
+    #divBorder 
     {
-    animation : type 3s infinite;
-    overflow :hidden;
-    white-space: nowrap;
-    color: white;
-    /* margin-left: 5vw; */
-    padding-top: 18%;
-    font-size: 5vw;
+        height: 340px;
+        width: 800px;
+        position: absolute;
+        top: 0;
+        
+        margin:10px;
+        margin-left: 20%;
+        /* display: none; */
+        z-index: 3 ;
+    } 
+   
+    @media screen and (max-width:768px)
+    {
+        #divBorder
+        {
+            width: 90%;
+            margin-left: 20%;
+        }
     }
-    @keyframes type
-  {
+    @media screen and (max-width: 576px)
+    {
+        #divBorder
+        {
+            margin-left:120px;
+            /* width: 100%; */
+        }
+    }
+    #divBorder:before {
+        content: '';
+        position: absolute;
+        top:100px;
+        left:-100px;
+        width:0%;
+        height:0%;
+        background: transparent;
+        border: 2px solid cyan;
+        animation: animate3 2s linear forwards;
+    }
+    @keyframes animate3
+    {
     0%
     {
-      width: 0ch;
+        width: 0;
+        height:0;
+        border-top-color: cyan;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+
+    }
+    25%
+    {
+        width: 100%;
+        height:0;
+        border-top-color: cyan;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+
+    }
+    50%
+    {
+        width: 100%;
+        height:100%;
+        border-top-color: cyan;
+        border-right-color: cyan;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+
+    }
+    75%
+    {
+        width: 100%;
+        height:100%;
+        border-top-color: cyan;
+        border-right-color: cyan;
+        border-bottom-color: cyan;
+        border-left-color: transparent;
+
+    }
+   100%
+    {
+        width: 100%;
+        height:100%;
+        border-top-color: cyan;
+        border-right-color: cyan;
+        border-bottom-color: cyan;
+        border-left-color: transparent;
+    }
+    
+    }
+    #container {
+    /* text-align: center; */
+    margin-top: 27%;
+    transform: translateX(-100px);
+    /* font-size: 100px; */
+}
+
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color: orange;
+	animation: blink 0.4s step-end infinite;
+}
+
+@keyframes blink 
+{
+    from, to 
+    { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: white; 
+	}
+}
+
+ul > li > a
+{
+    font-size: 10px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+#text1
+{
+    color: rgb(250, 250, 250);
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+#F_ltr
+{
+    color: rgb(250, 250, 250);
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    animation: animate1 1.6s all ;
+}
+@keyframes animate1
+{
+    0%
+    {
+        transform: translateX(-50px);
     }
     100%
     {
-      width: 23ch;
+        transform: translateX(50px);
     }
-  }
-  @media screen and (max-width:576px)
-  {
-      #name1
-      {
-          font-size: 10vw;
-          padding-top: 40%;
-      }
-      .div1
-      {
-          background: url("./Image/pexels-photo-129208.jpeg")
-      }
-  }
-    .div2
-    {
-        min-height: 120vh;
-        width: 100%;
-        
-        
-    }
-    .div2 p
-    {
-        text-align: left;
-        color: rgb(100, 99, 99);
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        line-height: 2rem;
-    }
-    .div2 .row span
-    {
-        line-height: 3rem;
-        color: rgb(221, 9, 175);
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-weight: bold;
-   
-    }
-    
-    .div2 .col-lg-9 p
-    {
-        font-size: 1.2rem;
-        color: rgb(19, 22, 175);
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin-left: 15%;
-        line-height: 3rem;
-        /* float: left; */
-        position: relative;
-        
-    }
-        
-    .div2 .col-lg-9 .range
-    {
-        float: right;
-        clear: both;
-        margin-top: -7%;
-        font-size: 1rem;
-        margin-right: 5%;
-        display: inline;
-        /* position: absolute; */
-        /* margin-left: -55%; */
-        width: 5%;
-        
-    }
-    
-    .div2 .col-lg-9 .skill
-    {
-        margin-left: 15%;
-        width: 80%;
-        height: 3px;
-      background-color: rgb(212, 212, 212);
-      /* box-shadow: 1px 1px 2px 1px; */
-      border: none;
-      
-      margin-top: -2%;
-      margin-bottom: 1%;
-    
-
-    }
-    @media screen and (max-width:576px)
-   {
-    .div2 .col-lg-9
-       {
-           /* width: 110%; */
-           margin-left: -10%;
-           margin-top: 10%;
-          
-       }
-       .div2 .col-lg-9 .skill
-       {
-           width: 90%;
-       }
-       .div2 .col-lg-9 .range
-       {
-           margin-top: -17%;
-       }
-   }
-    .div2 .col-lg-9 .html, .css, .bootstrap, .javascript, .jquery, .angular
-    {
-        animation : type2 1s ;
-        height: 3px;
-       background-color: rgb(221, 9, 175);
-       box-shadow: 1px 1px 5px 1px orange;
-       border: none;
-
-
-    }
-    .div2 .col-lg-9 .html{width: 95%}
-    .div2 .col-lg-9 .css{width: 85%}
-    .div2 .col-lg-9 .bootstrap{width: 80%}
-    .div2 .col-lg-9 .javascript{width: 85%}
-    .div2 .col-lg-9 .jquery{width: 70%}
-    .div2 .col-lg-9 .angular{width: 80%}
-
-    @keyframes type2
-    {
-      0%
-      {
-          width: 0%;
-      }  
-      100%
-      {
-          width: 70%;
-      }
-    }
-    
-    .div3
+}
+.div1-1
+{
+    width: 55%;
+    animation-name: animate5;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+@keyframes animate5
+{
+    from
     {
         width: 100%;
-        min-height: 70vh;
-        background: url("./Image/Cool-desktop-backgrounds.jpg   ");
-        background-attachment: fixed;
-        position: cover;
-
     }
-    .div3-1
+    to
     {
-        width: 90%;
-        min-height: 45vh;
-        background-color: rgba(255, 0, 191, 0.3);
-        margin: 5%;
-        text-align: center;
-        margin-left: 8%;
-        
+        width:55%;
     }
-    .div3-1 p
+}
+.div1-2
+{
+    width: 45%;
+    animation-name: animate6;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+@keyframes animate6
+{
+    from
     {
-        /* margin-top: 10%; */
-        color: rgb(255, 255, 255);
-        font-size: 3rem;
-
+        width: 0%;
     }
-    .div3-1 img
+    to
     {
-        width: 30%;
-        height: 0%;
+        width: 45%;
     }
-    @media screen and (max-width:576px)
-    {
-        .div3
-        {
-            margin-top: 10%;
-        }
-        .div3-1 p
-        {
-            font-size: 2.5rem;
-        }
-        .div3-1 img
-        {
-            width: 50%;
-            height:50px;
-            margin-bottom: 5%;
-        }
-    }
-
-    /*--------------- portfolio page---------- */
- 
-    .div4
-  {
-    margin: 0;
-    padding: 0;
-    background:white;
-    width:100%;
-    min-height: 100vh;  
-    /* margin-bottom: 50vh; */
-  }
-  .div4 ul
-  {
-    padding: 0;
-    position: relative;
+}
+.sec1
+{
     width: 100%;
-    margin: 10px 10px 10px;
-    margin-left: 23%;
-    
-
-  }
-  .div4 ul li
-  {
-    list-style: none;
-    float: left;
-    padding: 7px 15px;
-    /* font-size: 1em; */
-    color: black;
-    border: 1px solid deeppink;
-    margin-right: 15px;
-    font-family: arial;
-    text-transform: uppercase;
-
-  }
-  @media screen and (max-width:576px)
-  {
-      .div4 ul li
-      {
-          font-size: 0.72rem;
-          border: none;
-          margin: 1px;
-          padding: 5px 7px;
-      }
-      .div4 ul
-      {
-          margin: 0%;
-      }
-     
-  }
-  @media screen and (max-width:576px)
-  {
-    .div4 .container .box
-      {
-          width: 100%;
-          
-      }
-  }
-  .div4 ul li:hover, .active
-  {
-    background: deeppink;
-    color: white;
-  }
-  .div4 .container
-  {
-    padding: 0 30px;
-    position: relative;
-    padding: 30px;
-    box-sizing: border-box;
-
-  }
-  
-  .div4 .container .box
-  {
-    width: 30%;
-    height: 300px;
-    line-height: 100px;
-    text-align: center;
-    color: rgba(255,255,255,0.5);
-    font-family: arial;
-    font-size: 2em;
-    float: left;
-    box-sizing: border-box;
-    margin:10px;
-    text-transform: uppercase;
-    position: relative;
-  }
-  .div4 .container .box .imgBox
-  {
-      position: relative;
-     
-  }
-  .imgBox img
-  {
-      width: 100%;
-      height: 300px;
-
-  }
-  .div4 .container .box .details
-  {
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    background-color: rgba(252, 62, 5, 0);
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    color: rgba(255, 255, 255, 0.0);
-    font-size: 0.8rem;
-    transition: all 0.3s ease-in-out;
-  }
-  .div4 .container .box .details:hover
-  {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: rgba(255, 255, 255, 1);
-
-  }
-  .div4 .container .box .details a
-  {
-      font-size: 1.8rem;
-      padding-top: 35%;
-      text-align: center;
-      color: rgba(252, 252, 252, 0.0);
-  }
-  .div4 .container .box .details a:hover
-  {
-    color: rgba(252, 252, 252, 1);
-  }
-  .div4 .container .box .details p
-  {
-      margin-top: 0%;
-      margin-bottom: -24%;
-      font-size: 1rem;
-      text-transform: capitalize;
-      
-  }
-
-  /* -----Contact- page--- */
-  .div15
-{
-    /* margin-top: 75vh; */
-
-}
-@media screen and (max-width:988px)
-{
-    .div15
-    {
-        margin-top: -10vh;
-    }
-}
-.div16 
-{
-    background: url("./Image/icon/concrete_wall.png");
-    width: 100%;
-    min-height: 65vh;
-}
-/* -------Get in touch------- */
-.div17
-{
-    
-    transform: translateY(-115vh);
-    width: 100%;
-    min-height: 90vh;
-    background-color: white;
-    padding-bottom: 6%;
-    
-}
-.div17 h2
-{
-    text-align: center;
-}
-.div17 #one img
-{
-    margin-left: 9%;
-}
-.div17 .txt1, .txt2
-{
-
-width: 80%;
-padding: 18px 26px;
-margin-bottom: 20px;
-display: inline-block;
-border: none;
-border-bottom:   3px solid rgb(255, 216, 184);
-border-radius: 4px;
-
-
-}
-.div17 textarea
-{
-  width: 80%;
-  margin-left: 10px;
-  margin-top: 0px;
-  padding: 10px;
-  border: none;
-border-bottom:  3px solid rgb(255, 216, 184);
-padding-left: 15px;
-  
-}
-.div17 input[type=button]
-{
-width: 62%;
-height: 15%;
-color: white;
-background:linear-gradient(to right,rgb(0, 0, 0),rgb(230, 0, 180));
-margin-left: 20%;
-margin-top: 6%;
-border-radius: 7px;
-border: none;
-font-weight: bold;
-
-}
-.div17 input[type=button]:hover
-{
-    box-shadow: 1px 1px 10px gray;
-}
-@media screen and (max-width:968px)
-{
-    .div17 #two
-    {
-        margin-left: 10%;
-    }
-}
-/* ------Footer----- */
-.div16
-{
-    padding-top: 40vh;
-    color: rgb(165, 164, 164);
-}
-#news1
-{
-    transition: all 1.2s;
-    filter: grayscale(100%);
-}
-
-#news1:hover
-{
-    transform: scale(1.2,1.2);
-    filter: grayscale(0%);
-}
-@media screen and (max-width:992px)
-{
-    .div16
-    {
-        padding-top: 100vh;
-    }
-    .div16 #three
-    {
-        margin-left: 8%;
-        margin-top: 5%;
-    }
-    .div16 #Four
-    {
-        margin-top: 6%;
-    }
-    .div17
-    {
-        transform: translateY(-150vh);
-    
-    }
-    .div17 #two
-    {
-        margin-left: 10%;
-    }
-}
-@media screen and (max-width:768px)
-{
-    .div16 #two
-    {
-        margin-left: 10%;
-        margin-top: 8%;
-    }
-    .div17 
-    {
-        transform: translateY(-148vh);
-    }
-    .div16 #Four
-    {
-        margin-left: 8%;
-    }
-}
-.div16 a
-{
-    padding:8px;
-    background-color: gray;
-    text-decoration: none;
-    color: black;
-    border-radius: 30px;
-    /* margin-top: 35px; */
-    font-size: 10px;
-    margin: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.div16 a:hover
-{
-    background-color: white;
-    transition: all 0.8s;
-}
-
-#loading {
-    background: url('./Image/35771931234507.564a1d2403b3a.gif') no-repeat center center;
+    height: 100vh;
+    background-color: rgba(1, 22, 56);
+    opacity: 0.8;
     position: absolute;
     top: 0;
-    left: 0;
+
+}
+#mymenu ul li a
+{
+    /* border-left: 2px solid white; */
+    /* border-bottom: 2px solid white; */
+    cursor: pointer;
+}
+.animate_1
+{
+    animation-name: animate7;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+}
+@keyframes animate7
+{
+    from
+    {
+        border-bottom: 0px;
+        
+    }
+    to 
+    {
+        border-bottom: 2px solid white;
+        color: red;
+    }
+}
+#mymenu ul li a:hover
+{
+    border-bottom: 2px solid white;
+    /* transition: 1s; */
+}
+
+.sect2
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    bottom: 0;
+}
+
+/* ---------About Division------- */
+.div2
+{
+    background: url("./video/623549.jpg");
+    width: 100%;
+    min-height: 110vh;
+    background-repeat: no-repeat;
+    transform: translateY(-58px);
+    
+}
+.sec2
+{
+    width: 100%;
+    min-height: 110vh;
+    background-color: black;
+    opacity: 0.9;
+    
+}
+.div2 h1
+{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    
+}
+.div2 h1 span
+{
+    color: cyan;
+    font-size: 45px;
+    line-height: 0px;
+}
+.horizontal1
+{
+    background-color: cyan;
+    width: 120px;
+    height: 2px;
+}
+
+#myphoto
+{
+    width: 70%;
+    height: 430px;
+    margin-left: 20%;
+}
+#para1
+{
+    color: rgb(173, 181, 196);
+    line-height: 30px;
+    
+}  
+#para1 span
+{
+    color: cyan;
+}
+@media only screen and (max-width:768px)
+{
+    #para1
+    {
+        margin: 30px;
+    }
+    #myphoto
+    {
+        margin-left: 15%;
+    }
+}
+.para1
+{
+    display: none;
+}
+.animatea
+{
+    animation-name: animate_a;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes animate_a
+{
+    from
+    {
+       transform: translateY(50px); 
+    }
+    to 
+    {
+        transform: translateX(0px);
+    }
+}
+.my_details
+{
+    display: none;
+}
+.animateb
+{
+    animation-name: animate_a;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.animatec
+{
+    animation-name: animate_c;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes animate_c
+{
+    from
+    {
+        transform: scale3d(0.2,0.2,0.2);  
+    }
+    to 
+    {
+        transform:scale3d(1,1,1) ;
+    }
+}
+
+/* --------Skill page--------- */
+.div3
+{
+    background: url("./video/photo-of-man-using-laptop-3194523.jpg");
+    width: 100%;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    transform: translateY(-58px);
+    background-attachment: fixed;
+}
+.div3 h1
+{
+    color: white;
+    text-align:center;
+    font-size: 40px;
+}
+.div3 h1 span 
+{
+    color: cyan;
+    font-size: 40px;
+
+}
+.div3 .sec3
+{
+    background:linear-gradient(to right top, rgba(108, 142, 192, 0.9),20%, rgba(1, 22, 56, 0.9));;
+    opacity: 0.95;
+    width: 100%;
+    min-height: 80vh;
+}
+.div3 .sec3 span
+{
+    color: white;
+}
+.animated
+{
+    animation-name: animate_d;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.animatee
+{
+    animation-name: animate_e;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.animatef
+{
+    animation-name: animate_f;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.animateg
+{
+    animation-name: animate_g;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.animateh
+{
+    animation-name: animate_h;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.animatei
+{
+    animation-name: animate_i;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes animate_d
+{from{width: 0%;}to{width: 95%;}}
+@keyframes animate_e
+{from{width: 0%;}to{width: 90%;}}
+@keyframes animate_f
+{from{width: 0%;}to{width: 85%;}}
+@keyframes animate_g
+{from{width: 0%;}to{width: 80%;}}
+@keyframes animate_h
+{from{width: 0%;}to{width: 75%;}}
+@keyframes animate_i
+{from{width: 0%;}to{width: 85%;}}
+
+
+.flex-container
+{
+    display: flex;
+}
+
+/*-------- Portfoliopage------- */
+.div4
+{
+    background: url("./video/623549.jpg");
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    transform: translateY(-58px);
+    /* background-attachment: fixed; */
+    /* padding-bottom: 20px; */
+}
+.div4 h1
+{
+    color: white;
+    text-align:center;
+    font-size: 40px;
+}
+.div4 h1 span 
+{
+    color: cyan;
+    font-size: 40px;
+
+}
+.div4 .sec4
+{
+    background-color:rgba(0, 0, 0,0.9);
+    /* opacity: 0.92; */
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+.div4 .sec4 span
+{
+    color: white;
+}
+.div4 .section1 ul li
+{
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    /* margin-left: 10px; */
+    margin-top: 10px;
+    list-style-type: none;
+    color: cyan;
+    border: 1px solid cyan;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+.div4 .container .section1
+{
+    display: flex;
+    justify-content: space-evenly;
+    /* width: 70%; */
+    /* height: auto; */
+}
+.div4 .section1 ul li:hover, .active 
+{
+    background-color: cyan;
+    color: black;
+    transition: 0.6s;
+    font-weight: bold;
+    box-shadow: 0px 0px 150px 0px whitesmoke;
+    border-radius: 20px;
+}
+.div4 .section1 .active
+{
+    background-color: cyan;
+    color: black;
+    transition: 0.6s;
+    font-weight: bold;
+    box-shadow: 0px 0px 150px 0px whitesmoke;
+    border-radius: 20px;
+}
+.scale1
+{
+    animation-name:scale_1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes scale_1
+{
+    from
+    {
+        transform: scale3d(0.5,0.5,0.5);
+    }
+    to 
+    {
+        transform: scale3d(1,1,1);
+    }
+}
+.scale2
+{
+    animation-name:scale_2;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+@keyframes scale_2
+{
+    from
+    {
+        transform: scale3d(1,1,1);
+    }
+    to 
+    {
+        transform: scale3d(0,0,0);
+    }
+}
+.div4 .row .col-md-4
+{
+    position: relative;
+    overflow: hidden;
+}
+.div4 .row .col-md-4 .overlay
+{
+    position: absolute;
+    width: 93%;
+    height: 250px;
+    left: 4%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.div4 .row .col-md-4 .overlay:hover
+{
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.4s all;
+    transform: scale3d(0.9,0.9,0.9);
+}
+.div4 .row .col-md-4 img:hover
+{
+    transform: scale3d(1.3,1.3,1.3);
+    transition: 1s all;
+}
+.div4 .container2
+{
+    background-color:black;
+    padding-bottom: 20px;
+}
+.fa-search
+{
+    color: rgba(255, 255, 255, 0);
+    font-size: 25px;
+}
+.margin-20
+{
+    margin-left:45%;
+    margin-top: 25%;
+}
+.div4 .overlay p
+{
+    color: rgba(255, 255, 255, 0);
+    text-align: center;
+    line-height:8px;
+}
+/* ---------Service page---------- */
+.div5
+{
+    width: 100%;
+    min-height: 80vh;
+    background: url("./video/img3.jpg");
+    transform: translateY(-58px);
+    /* padding-bottom: 20px; */
+}
+.div5 .sec5
+{
+    background-color:rgba(4, 37, 90, 0.7);
+    width: 100%;
+    min-height: 80vh;
+    padding-bottom: 20px;
+}
+.div5 h1 span
+{
+    color: cyan;
+    text-align:center;
+    font-size: 40px;
+}
+.div5 h1
+{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.div5 .row .col-md-5 .section1,.section2
+{
+    width: 80%;
+    margin-left: 30%;
+    height: 45vh;
+    /* border: 1px solid cyan; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0,1);
+    border-radius: 10px;
+
+}
+.div5 .row .col-md-5 .section1:hover
+{
+    transform: translateY(-15px);
+    transition: 0.4s all ease-out;
+    box-shadow: 0px 0px 10px 0px cyan;   
+}
+.div5 .row .col-md-5 .section2:hover
+{
+    transform: translateY(-10px);
+    transition: 0.4s all ease-out;
+    box-shadow: 0px 0px 10px 0px cyan; 
+}
+
+@media only screen and (max-width:768px)
+{
+.div5 .row .col-md-5 .section1,.section2
+{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+    
+}
+}
+.icon_div
+{
+    width: 80px;
+    height: 80px;
+    border: 5px solid cyan;
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 15px;
+    
+}
+.icon_div img
+{
+    width: 50px;
+    height: 50px;
+}
+.div5 .row .col-md-5 h3
+{
+    color: rgb(254, 255, 255);
+    margin: 0;
+}
+.div6
+{
+    transform: translateY(-58px);
+}
+.div7
+{
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    min-height: 75vh;
+    transform: translateY(-58px);
+}
+.div7 #contact
+{
+    width: 100%;
+    height: 75vh;
+    background-color: rgb(0, 0, 0);
+    transform: translateY(-130px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+ #img1, #img2
+{
+    
+    height: 70px;
+    width: 150px;
+}
+#img1
+{
+    transform: translateY(-34px);
+    align-self: center;
+}
+#img2
+{
+    transform: translateY(34px);
+    align-self: center;
+}
+.div7 #adress1,#adress2
+{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) 
+{
+.div7 #contact
+{
+    transform: translateY(0px);
+}
+}
+.div7 #contact h1
+{
+    text-align: center;
+    transform: translateY(-55px);
+    color: cyan;
+    font-family:'Kaushan Script', cursive ;
+}
+.div7 #contact #img3
+{
+    transform: translateY(-50px); 
+}
+.div7 #contact a 
+{
+    margin-left: 20px;
+    transform: translateY(-45px);
+}
+.div7 #contact input[type=text]
+{
+    background-color: black;
+    border: 1px dashed gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    color: gray;
+    padding-left: 0px;
+    margin-left: 20px;
+    width: 80%;
+    transform: translateY(-45px);
+}
+.div7 #contact textarea
+{
+    background-color: black;
+    border: 1px dashed gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    color: gray;
+    padding-left: 0px;
+    margin-left: 20px;
+    width: 80%;
+    transform: translateY(-55px);
+}
+.div7 #contact .btn
+{
+    border: 1px solid cyan;
+    color: cyan;
+    font-weight: bold;
+}
+.div7 #contact .btn:hover
+{
+    color: black;
+    font-weight: bold;
+    background-color: cyan;
+    transition: 0.9s all;
+}
+.div7 #adress1 h3
+{
+    color: White;
+    font-family:'Kaushan Script', cursive ;
+    /* margin-left: 20%; */
+    text-align: center;
+} 
+.div7 #adress1 p
+{
+    color: gray;
+  
+}
+.div7 #adress1 a 
+{
+    color: cyan;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.div7 #adress1 a:hover
+{
+    color: white;
+    transition: 0.6s all;
+}
+.div7 #adress1 
+{
+    padding: 5.5%;
+    text-align: center;
+}
+.div7 #adress2 h3
+{
+    color: White;
+    font-family:'Kaushan Script', cursive ;
+    /* margin-left: 20%; */
+    text-align: center;
+} 
+.div7 #adress2 p
+{
+    color: gray;
+  
+}
+.div7 #adress2 a 
+{
+    color: cyan;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.div7 #adress2 a:hover
+{
+    color: white;
+    transition: 0.6s all;
+}
+.div7 #adress2 
+{
+    padding: 5.5%;
+    text-align: center;
+}
+.div7 .row2
+{
+    display: flex;
+    flex-direction:row ;
+    justify-content:center;
+    transform: translateY(-60px);
+}
+.div7 .row .my-icon
+{
+    background-color: #000000;
+    /* display: inline; */
+    border-radius: 30px;
+    margin-left: 10px;
+   
+
+}
+.div7 .row .my-icon .p-3:hover 
+{
+    transform: rotate(360deg);
+    transition: 0.4s all;
+
+}
+.div8
+{
+    background-color:black;
+    width: 100%;
+    height: 100px;
+    transform: translateY(-58px);
+    display: flex;
+    justify-content: center;
+}
+.div8 #img3
+{
+    height: 70px;
+    width: 150px;
+    transform: translateY(-30px);
+}
+.mycv
+{
+    transition: 1s all ease;
+    overflow: hidden;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    background:none;
+    border: 1px solid cyan;
+    font-size: 12px;
+    padding: 15px 20px 15px 20px;
+    cursor: pointer;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-decoration: none;
+}
+.mycv::before
+{
+    background: cyan;
+    content: "";
+    position:absolute;
+    left:91px;
+    top:23px;
+    overflow: hidden;
+    transition: all 0.6s ease;
+    transform: translate(-50%, -50%) rotate(0deg) ;
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.mycv1::before
+{
+    width:0;
     height: 100%;
-    width: 100vw;
-    z-index: 9999999;
 }
-  #myVideo
-  {
-      width: 100vw;
-      height: auto;
-      position: relative;
-      /* margin-top: 55px; */
-      
-  }
-    </style>
-    <script>
-    
-    </script>
-    
+.mycv1:hover::before
+{
+    width: 100%;
+    /* color: black; */
+}
+.mycv:hover
+{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+</style>
 </head>
-<body> 
-        <div id="loading"></div>
-        <video autoplay muted loop id="myVideo">
-            <source src="./Image/Pexels Videos 4577.mp4" type="video/mp4">
-          </video>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<body>
+        
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg  p-0 sticky-top">
+        <a href="" class="navbar-brand ml-3"> <img src="./video/images.jpg" alt="" width="150px"></a>
 
-    <div class="div1">
-        <div class="div1-1">
-        <nav class="navbar navbar-expand-sm " id="navbar">
+        <button type="button" class="navbar-toggler" data-target="#mymenu"  aria-controls="mymenu" data-toggle="collapse">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div id="mymenu" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav p-2">
+                <li class="nav-item ">
+                    <a href="" id="nav-link" class="nav-link ml-3 active">HOME</a>
+                </li>
+                <li class="nav-item">
+                       <a href="#div2" class="nav-link ml-3">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#div3" class="nav-link ml-3">SKILLS</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#div4" class="nav-link ml-3">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#div5" class="nav-link ml-3">SERVICE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#div6" class="nav-link  pr-4 pt-2 pb-2 margin-5 rounded">Contact Us</a>
+                </li>
+            </ul>
+        </div>
 
-                <!-- Brand Logo -->
-                <a class="navbar-brand ml-3" href="#">
-                <Span id="brand">Sushant Kulkarni</Span>
-                </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-menu" aria-controls="my-menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="collapse navbar-collapse" id="my-menu">
-                    <ul class="navbar-nav">
-                        <!-- Active item -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#resume">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contactPage">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Collapse End -->
-            </nav>
-            <br><br><br>
-            <center> <p id="paraaa" class="ex1 pt-5 mt-5">Front End</p></center>
-            <center> <p id="paraaa" class="ex2">Web Developer</p></center>
-            <center> <p id="" class="desc">- sushant -</p></center>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		    <script src="textyle.min.js"></script>
-		    <script>
-			$(window).on('load',function(){
-				//simple use
-				$('.ex1').textyle();
-				$('.desc').textyle();
-				//you can select options or add callback
-				$('.ex2').textyle({
-									duration : 1000,
-									delay : 200,
-									easing : 'swing',
-									callback : function(){
-										$(this).css({
-											color : 'coral',
-											transition : '1s',
-										});
-										$('.desc').css({'opacity':1, color:'blue'});
-									}
-								});
-			});
+    </nav>
 
-            function hideLoader() {
-    $('#loading').hide();
-}
-
-$(window).ready(hideLoader);
-
-setTimeout(hideLoader, 20 * 1000);
-		    </script>
+    <div class="div1 d-flex">
+        <div class="div1-1 d-none d-md-block">
+            
+        </div>
+        <div class="div1-2">
+            
+            <video autoplay muted loop class="myvideo">
+                <source src="./video/video.mp4">  
+                   
+            </video>
+            <section class="sec1 d-md-none"> 
+                
+            </section>
+            <section class="sect2"> 
+                <img src="./video/dots-pattern.png" alt="" width="100%" height="250px">
+            </section>
+            
+        </div>
+        
+       
+    </div>
+    <div id="divBorder">
+        <div id="container">
+            <div id="text1"><span id="F_ltr">S</span>ushant Kulkarni</div>
+            <div id="text"></div><div id="cursor"></div>
            
-
-
-
-
         </div>
-        </div>
-  <div class="div2" id="about">
-    <center><h2 class="mt-5">About Me</h2>
-    <img src="./Image/line2.png" alt="" width="15%">
-    </center>
-    <p class="mx-5">I am Sushant Kulkarni. I am a Front end web Developer in Bangalore, India. I am graduate Computer Application(BCA) at SSBCA degree  collage Gokak,Karnataka and perceived Corporate Front End Web Developer training at WebStack Academy,Bangalore, Also enhancing knowledge and building designing & developement capabilities through day-to-day project experiences.</p>
-    <div class="row mx-5 mt-5">
-        <div class="col-lg-3 col-md-12">    
-            <span>AGE : </span> 24<br>
-            <Span>RESIDENCE : </Span> India<br>
-            <Span>ADDRESS : </Span> Gokak, Karnatak<br>
-            <span>EMAIL : </span> sushantkulkarni44@gmail.com<br>
-            <span>PHONE : </span> +91-9113690491<br>
-            <span>GITHUB : </span> sushantkulkarni.github.io<br>
-        </div>
-        <div class="col-lg-9 col-md-12">
-            <p>HTML</p>
-            <span class="range">95%</span>
-            <div class="skill">
-                <div class="html">
+    </div>
+<div class="div2" id="div2">
+    <div class="sec2">
+        <h1 class="pt-5">ABOUT <span>ME</span></h1>
+        <hr class="horizontal1">
+        <div class="row mt-5">
+            <div class="col-md-5">
+                <img id="myphoto"  src="./video/sushant2.jpg" alt="">
+            </div>
+            <div class="col-md-7" id="para1">
+                <p class="para1">I am <span>SUSHANT KULKARNI</span> . I am a Front end web Developer in Bangalore, India. I am graduate Computer Application(BCA) at SSBCA degree collage Gokak,Karnataka and perceived Corporate Front End Web Developer training at WebStack Academy,Bangalore, Also enhancing knowledge and building designing & developement capabilities through day-to-day project experiences.</p>
+                <section class="my_details">
+                <span>AGE : </span> 25<br>
+                <Span>ADDRESS : </Span> Gokak, Karnataka<br>
+                <span>EMAIL : </span> sushantkulkarni44@gmail.com<br>
+                <span>PHONE : </span> +91-9113690491<br>
+                <span>GITHUB : </span> sushantkulkarni.github.io<br><br>
+                <a id="CV" class="mycv mycv1" href="./video/Sushant_CV.docx" download ><i class="fa fa-download"  ></i>  Download resume </a>
+                </section>
 
-                </div>
             </div>
-            <p>CSS</p>
-            <span class="range">85%</span>
-            <div class="skill">
-                <div class="css">
-                    
-                </div>
-            </div>
-            <p>BOOTSTRAP</p>
-            <span class="range">80%</span>
-            <div class="skill">
-                <div class="bootstrap">
-                    
-                </div>
-            </div>
-            <p>JAVASCRIPT</p>
-            <span class="range">85%</span>
-            <div class="skill">
-                <div class="javascript">
-                    
-                </div>
-            </div>
-            <p>JQUERY</p>
-            <span class="range">70%</span>
-            <div class="skill">
-                <div class="jquery">
-                    
-                </div>
-            </div>
-            <p>ANGULAR</p>
-            <span class="range">80%</span>
-            <div class="skill">
-                <div class="angular">
-                    
-                </div>
-            </div>
-
         </div>
     </div>
 
-  </div>      
- 
-
-  <div class="div3" id="resume"><br>
-      <section class="div3-1 container">
-          <p>Wanna Know More About Me...</p>
-          <p>Download My Resume</p>
-          <center><a href="./Image/Sushant_CV.docx" width="30" height="20" download><img src="./Image/download-button (2).png" alt="" > </a></center>
-      </section>
-  </div>
- 
-<div class="div4" id="portfolio">
-        <center><h1 class="mt-5">Portfolios</h1>
-            <img src="./Image/line2.png" alt="" width="15%">
-            </center>
-  <div class="container">
-
-        <ul>
-            <li class="button active" data-filter="all">all</li>
-          <li class="button" data-filter="design">design</li>
-          <li class="button" data-filter="bootstrap">bootstrap</li>
-          <li class="button" data-filter="javascript">javascript</li>
-          <li class="button" data-filter="angular">angular</li>
-          <div style="clear:both;"></div>
-          
-        </ul><br>
-          
-          <div alt="" class="box filter design">
-              <div class="imgBox">
-                  <img src="./Image/anticq.PNG" alt="">
-              </div>
-              <div class="details" onmouseover="hover1()" onmouseout="hover2()">
-                 <a id="se1" href="./Image/codexboss-min.png" class="fa fa-search"></a><br>
-                  <p>Employee Portfolio</p>
-                  <span class="small">HTML5 + CSS3 + Git</span>
-              </div>
-          </div>
-              
-            
-        <div alt="" class="box filter  design">
-                <div class="imgBox">
-                        <img src="./Image/bitcoin.PNG" alt="">
-                    </div>
-                    <div class="details" onmouseover="hover3()" onmouseout="hover4()">
-                            <a id="se2" href="./Image/project_2.png" class="fa fa-search"></a><br>
-                            <p>Trading Portfolio (Buy and Sell)</p>
-                            <span class="small">HTML5 + CSS3 + Git</span>
-                        </div>
+</div>
+<div class="div3" id="div3">
+    <div class="sec3">
+        <h1 class="pt-5">MY <span style="color: cyan;">SKILLS</span></h1>
+        <hr class="horizontal1"><br>    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section1 ml-5" style="width: 80%; height: 25px;  display: inline-block;">
+                    <sec style="width:50%; height: 25px;  color: white; float: left;">HTML5</sec>
+                    <sec class="Count" style="width: 46%; height: 25px;  float: left; text-align: end; color: white;">95</sec>
+                    <sec style="float: left; color: white;">%</sec>
                 </div>
+                <div class="progress ml-5" style="width: 80%; height: 7px;background-color: black;">
+                    <div class="progress-bar progress-bar1 progress-bar-striped bg-info" style="width: 95%;">
+
+                    </div>
+                </div><br>
+                <div class="section1 ml-5" style="width: 80%; height: 25px;  display: inline-block;">
+                    <sec style="width:50%; height: 25px; color: white; float: left;">CSS3</sec>
+                    <sec class="Count" style="width: 46%; height: 25px;  float: left; text-align: end; color: white;">90</sec>
+                    <sec style="float: left; color: white;">%</sec>
+                </div>
+                <div class="progress ml-5" style="width: 80%; height: 7px;background-color: black; ">
+                    <div class="progress-bar progress-bar2 progress-bar-striped  bg-info" style="width: 90%;">
+
+                    </div>
+                </div><br>
+                <div class="section1 ml-5" style="width: 80%; height: 25px;  display: inline-block;">
+                    <sec style="width:50%; height: 25px; color: white; float: left;">Bootstrap 4</sec>
+                    <sec class="Count" style="width: 46%; height: 25px;  float: left; text-align: end; color: white;">85</sec>
+                    <sec style="float: left; color: white;">%</sec>
+                </div>
+                <div class="progress ml-5" style="width: 80%; height: 7px; background-color: black; ">
+                    <div class="progress-bar progress-bar3 progress-bar-striped bg-info" style="width: 85%;">
+
+                    </div>
+                </div><br>
+            </div>
+            <div class="col-md-6">
+                <div class="section1 ml-5" style="width: 80%; height: 25px;  display: inline-block;">
+                    <sec style="width:50%; height: 25px; color: white; float: left;">Javascript</sec>
+                    <sec class="Count" style="width: 46%; height: 25px;  float: left; text-align: end; color: white;">80</sec>
+                    <sec style="float: left; color: white;">%</sec>
+                </div>
+                <div class="progress ml-5" style="width: 80%; height: 7px; background-color: black; ">
+                    <div class="progress-bar progress-bar4 progress-bar-striped  bg-info" style="width: 80%;">
+
+                    </div>
+                </div><br>
+                <div class="section1 ml-5" style="width: 80%; height: 25px;  display: inline-block;">
+                    <sec style="width:50%; height: 25px; color: white; float: left;">Jquery</sec>
+                    <sec class="Count" style="width: 46%; height: 25px;  float: left; text-align: end; color: white;">75</sec>
+                    <sec style="float: left; color: white;">%</sec>
+                </div>
+                <div class="progress ml-5" style="width: 80%; height: 7px; background-color: black; ">
+                    <div class="progress-bar progress-bar5 progress-bar-striped  bg-info" style="width: 75%;">
+
+                    </div>
+                </div><br>
+                <div class="section1 ml-5" style="width: 80%; height: 25px;  display: inline-block;">
+                    <sec style="width:50%; height: 25px; color: white; float: left;">Angular 6</sec>
+                    <sec class="Count" style="width: 46%; height: 25px;  float: left; text-align: end; color: white;">85</sec>
+                    <sec style="float: left; color: white;">%</sec>
+                </div>
+                <div class="progress ml-5" style="width: 80%; height: 7px; background-color: black; ">
+                    <div class="progress-bar progress-bar6 progress-bar-striped  bg-info" style="width: 85%;">
+
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+    </div>
+</div>
+<div class="div4" id="div4">
+    <div class="sec4">
+        <h1 class="pt-5">MY <span style="color: cyan;">PORTFOLIOS</span></h1>
+        <hr class="horizontal1"><br>  
+        <div class="container">
+            <div class="section1">
+            <ul>
+              <li class="button active" data-filter="all">All</li>
+              <li class="button" data-filter="design">Design</li>
+              <li class="button" data-filter="bootstrap">Bootstrap</li>
+              <li class="button" data-filter="javascript">Javascript</li>
+              <li class="button" data-filter="angular">Angular</li>
+              <div style="clear:both;"></div>
+            </ul>
+            </div>
+        </div>
+        <div class="container container2">
+            <div class="row">
+                <div class="col-md-4 box filter design mt-3">
+                    <div class="img1">
+                        <img src="./video/anticq.png" alt="" width="100%" height="250px">
+                    </div>
+                    <div id="overlay1" class="overlay overlay1" onmouseover="hover1()" onmouseout="out1()">
+                        <a id="search1" href="./video/codexboss-min.png" class="fa fa-search margin-20"></a><br><br><br><br>
+                        <p id="p1">Employee Portfolio</p>
+                        <p id="sp1" class="small">HTML5 + CSS3 + Git</p>
+                    </div>
+
+                </div>
+                <div class="col-md-4 box filter design mt-3">
+                    <div class="img2">
+                        <img src="./video/bitcoin.png" alt="" width="100%" height="250px">
+                    </div>
+                    <div class="overlay overlay2"  onmouseover="hover2()" onmouseout="out2()">
+                        <a id="search2"  href="./video/project_2.png" class="fa fa-search margin-20"></a><br><br><br><br>
+                        <p id="p2">Trading Portfolio (Buy and Sell)</p>
+                            <p id="sp2" class="small">HTML5 + CSS3 + Git</p>
+                    </div>
+                </div>
+                <div class="col-md-4 box filter design mt-3">
+                    <div class="img3">
+                        <img src="./video/emertxe.png" alt="" width="100%" height="250px">
+                    </div>
+                    <div class="overlay overlay3"  onmouseover="hover3()" onmouseout="out3()">
+                        <a id="search3" href="./video/Emertxe_Newsletter_Final_Design.jpg" class="fa fa-search margin-20"></a><br><br><br><br>
+                        <p id="p3">Newsletter Emertxe (IT Academy)</p>
+                            <p id="sp3" class="small">HTML5 + CSS3 + Git</p>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-4 box filter bootstrap mt-3">
+                    <div class="img4">
+                        <img src="./video/granny.png" alt="" width="100%" height="250px">
+                    </div>
+                    <div class="overlay overlay4"  onmouseover="hover4()" onmouseout="out4()">
+                        <a  id="search4" href="./video/granny-min.png" class="fa fa-search margin-20"></a><br><br><br><br>
+                        <p id="p4">Granny Restaurant</p>
+                        <p id="sp4" class="small">HTML5 + CSS3 + Bootstrap4 + Git</p>
+                    </div>
+                </div>
+                <div class="col-md-4 box filter bootstrap mt-3">
+                    <div class="img5">
+                        <img src="./video/apperle.png" alt="" width="100%" height="250px">
+                    </div>
+                    <div class="overlay overlay5"  onmouseover="hover5()" onmouseout="out5()">
+                        <a id="search5"  href="./video/apperle-min.png" class="fa fa-search margin-20"></a><br><br><br><br>
+                        <p id="p5">Apperle Mobile Portfolio</p>
+                            <p id="sp5" class="small">HTML5 + CSS3 + Bootstrap4 + Git</p>
+                    </div>
+                </div>
+                <div class="col-md-4 box filter javascript mt-3">
+                    <div class="img6">
+                        <img src="./video/penguin.png" alt="" width="100%" height="250px">
+                    </div>
+                    <div class="overlay overlay6"  onmouseover="hover6()" onmouseout="out6()">
+                        <a id="search6" href="https://sushantkulkarni44.github.io/PenguinGame/" class="fa fa-search margin-20"></a><br><br><br><br>
+                        <p id="p6">Penguin Game</p>
+                        <p id="sp6" class="small">javascript + Git</p>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-4 box filter angular mt-3">
+                    <div class="img7">
+                        <img src="./video/todo_2.jpg" alt="" width="100%" height="250px">
+                    </div>
+                    <div class="overlay overlay7"  onmouseover="hover7()" onmouseout="out7()">
+                        <a id="search7" href="https://todolistdeployment.firebaseapp.com" class="fa fa-search margin-20"></a><br><br><br><br>
+                        <p id="p7">Portfolio</p>
+                        <p id="sp7" class="small">Angular 6 + Firebase Cloud Firestore + Git</p>
+                    </div>
+                </div>
+                <div class="col-md-4 box filter angular mt-3">
+                    <div class="img8">
+                        <img src="./video/Screenshot (28).png" alt="" width="100%" height="250px">
+                    </div>
+                    <div class="overlay overlay8"  onmouseover="hover8()" onmouseout="out8()">
+                        <a id="search8" href="https://nameless-earth-90099.herokuapp.com" class="fa fa-search margin-20"></a><br><br><br><br>
+                        <p id="p8">Portfolio</p>
+                            <p id="sp8" class="small">Angular 6 + Heroku</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="div5" id="div5">
+    <div class="sec5">
+        <h1 class="pt-5">My <span style="color: cyan;">Service</span></h1>
+        <hr class="horizontal1"><br>  
+        <div class="row">
+            <div class="col-md-5">
+                <div class="section1">
+                    <div class="icon_div">
+                        <img src="./video/gear.png" alt="">
+                        
+                    </div>
+                    <h3>UI Development</h3>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="section2">
+                    <div class="icon_div">
+                        <img src="./video/devices.png" alt="">
+                        
+                    </div>
+                    <h3>Responsive Design</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="div6" id="div6">
+    <div id="googleMap" style="width:100%;min-height:80vh;"></div>
+</div>
+<div class="div7">
+    <div class="row">
+    <div id="adress1" class="col-md-4">
+        
+        <h3>Our Adress</h3>
+        <p>#55, 2nd cross, 2nd stage KHB Colony Basaveshwara Nagar Bangalore</p>
+        <a href="">VEIW ON MAP</a>
+    </div>
+    <div id="contact" class="col-md-4  col-sm-8 offset-sm-2 offset-md-0">
+        <img id="img1"src="./shapes/diamond.png" alt="">
+        <h1>Get in Toutch</h1>
+        <img id="img3" src="./shapes/shape-11.png" alt="">
+        <section><a href="" class="fa fa-user" style="color: gray;"></a> <input type="text" placeholder="Name"></section>
+        <section><a href="" class="fa fa-user" style="color: gray;"></a> <input type="text" placeholder="Email"></section>
+        <section><a href="" class="fa fa-user" style="color: gray; transform: translateY(-90px);"></a> <textarea rows="2"  placeholder="Write Message"></textarea></section>
+        <div class="btn ml-5 mr-5">Send Message</div>
+        <img id="img2" src="./shapes/diamond.png" alt="">
+    </div>
+    <div id="adress2"  class="col-md-4 ">
+        <h3>Contact Us</h3>
+        <p>Email : sushantkulkarni44@gmail.com</p>
+        <p>Mobile : +91-9113690491</p>
+        <a href="">SEND A MESSAGE</a>
+    </div>
+</div>
+<div class="row row2">
+<section class="my-icon"> <a href="https://www.facebook.com/sushant.kulkarni.520" class="fab fa-facebook-f p-3" style="color:white;"></a> </section>
+<section class="my-icon"> <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvqKRQwRZZmgCQdZGMxVxXnTfPFZRXKCzDCMswqLLZRkztKHgwQTSkLZhfvzXprzZtLjHg" class="fas fa-envelope p-3" style="color: white;"></a> </section>
+<section class="my-icon"> <a href="" class="fab fa-instagram p-3" style="color: white;"></a> </section>
+<section class="my-icon"> <a href="" class="fab fa-linkedin-in p-3" style="color: white;"></a> </section>
+</div>
+</div>
+<div class="div8">
+    <img id="img3"src="./shapes/diamond.png" alt="">
+</div>
+
+<script>
+    // List of sentences
+var _CONTENT = [ 
+	"Front-End Web Developer....!", 
+	" Lives In Bangalore." 
+	
+];
+
+// Current sentence being processed
+var _PART = 0;
+
+// Character number of the current sentence being processed 
+var _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+var _INTERVAL_VAL;
+
+// Element that holds the text
+var _ELEMENT = document.querySelector("#text");
+
+// Cursor element 
+var _CURSOR = document.querySelector("#cursor");
+
+// Implements typing effect
+function Type() { 
+	// Get substring with 1 characater added
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		// Hide the cursor
+		_CURSOR.style.display = 'none';
+
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 1000);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	// Get substring with 1 characater deleted
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If current sentence was last then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_CURSOR.style.display = 'inline-block';
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+
+$(document) .ready(function(){
+    $(".navbar-brand").mouseover(function(){
+        $(".navbar-brand").addClass("animate_1");
+    })
+})
+
+
+$(document).scroll(function(){
+    var a = $(this).scrollTop();
+    if(a>200)
+    {
+        $(".para1").addClass("animatea").fadeIn(2000);
+        $("#myphoto").addClass("animatec").fadeIn(2000);
+    }
+    else
+    {
+        $(".para1").fadeOut(1000);
+        $("#myphoto").fadeOut(1000);
+    }
+
+    if(a>600)
+    {
+        $(".my_details").addClass("animateb").fadeIn(2000);
+    }
+    else
+    {
+        $(".my_details").fadeOut(1000);
+    }
+
     
-  
-        <div alt="" class="box filter  design">
-                <div class="imgBox">
-                        <img src="./Image/emertxe.PNG" alt="">
-                    </div>
-                    <div class="details" onmouseover="hover5()" onmouseout="hover6()">
-                            <a id="se3" href="./Image/Emertxe_Newsletter_Final_Design.jpg" class="fa fa-search"></a><br>
-                            <p>Newsletter Emertxe (IT Academy)</p>
-                            <span class="small">HTML5 + CSS3 + Git</span>
-                        </div>
-                </div>
-  
-  
-    <div alt="" class="box filter  bootstrap">
-            <div class="imgBox">
-                    <img src="./Image/granny.PNG" alt="">
-                </div>
-                <div class="details" onmouseover="hover7()" onmouseout="hover8()">
-                        <a id="se4" href="./Image/granny-min.png" class="fa fa-search"></a><br>
-                        <p>Granny Restaurant</p>
-                        <span class="small">HTML5 + CSS3 + Bootstrap4 + Git</span>
-                    </div>
-            </div> 
-  
-         
-        <div alt="" class="box filter  bootstrap">
-                <div class="imgBox">
-                        <img src="./Image/apperle.PNG" alt="">
-                    </div>
-                    <div class="details" onmouseover="hover9()" onmouseout="hover10()">
-                            <a id="se5" href="./Image/apperle-min.png" class="fa fa-search"></a><br>
-                            <p>Apperle Mobile Portfolio</p>
-                            <span class="small">HTML5 + CSS3 + Bootstrap4 + Git</span>
-                        </div>
-                </div>
-  
-          
-    <!-- <div alt="" class="box filter  javascript">
-            <div class="imgBox">
-                    <img src="./Image/todo_3.jpg" alt="">
-                </div>
-                <div class="details" onmouseover="hover11()" onmouseout="hover12()">
-                        <a id="se6" href="" class="fa fa-search"></a><br>
-                        <p>Todo App</p>
-                  <span class="small">javascript + Git</span>
-                    </div>
-            </div>   -->
-  
-          
-        <div alt="" class="box filter  javascript">
-                <div class="imgBox">
-                        <img src="./Image/penguin.PNG" alt="">
-                    </div>
-                    <div class="details" onmouseover="hover13()" onmouseout="hover14()">
-                            <a id="se7" href="https://sushantkulkarni44.github.io/PenguinGame/" class="fa fa-search"></a><br>
-                            <p>Penguin Game</p>
-                  <span class="small">javascript + Git</span>
-                        </div>
-                </div>
-  
-          
-    <div alt="" class="box filter  angular">
-            <div class="imgBox">
-                    <img src="./Image/todo_2.jpg" alt="">
-                </div>
-                <div class="details" onmouseover="hover15()" onmouseout="hover16()">
-                        <a id="se8" href="https://todolistdeployment.firebaseapp.com" class="fa fa-search"></a><br>
-                        <p>Portfolio</p>
-                        <span class="small">Angular 6 + Firebase Cloud Firestore + Git</span>
-                    </div>
-            </div> 
-            
-    <div alt="" class="box filter  angular">
-                <div class="imgBox">
-                        <img src="./Image/Screenshot (28).png" alt="">
-                    </div>
-                    <div class="details" onmouseover="hover17()" onmouseout="hover18()">
-                            <a id="se9" href="https://nameless-earth-90099.herokuapp.com" class="fa fa-search"></a><br>
-                            <p>Portfolio</p>
-                            <span class="small">Angular 6 + Heroku</span>
-                        </div>
-                </div> 
+
+})
+
+$(document).scroll(function(){
+    var b = $(this).scrollTop();
+    if(b>800)
+    {
+        $(".progress-bar1").addClass("animated").fadeIn(1000);
+        $(".progress-bar2").addClass("animatee").fadeIn(1000);
+        $(".progress-bar3").addClass("animatef").fadeIn(1000);
+        $(".progress-bar4").addClass("animateg").fadeIn(1000);
+        $(".progress-bar5").addClass("animateh").fadeIn(1000);
+        $(".progress-bar6").addClass("animatei").fadeIn(1000);
+
+    }
+    else
+    {
+        $(".progress-bar").fadeOut(1000);
+    }
     
-  
-      </div>
-    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+})
+
+
+$(".Count").counterUp({delay:10,time:2000});
 
 
 
-    <div class="div15">
 
-
-            <div id="googleMap" style="width:100%;min-height:100vh;"></div>
-            </div>
-            <!----------------Footer--------------->
-            <div class="div16">
-                <center><p class="mt-5"> &copy;Copywrite 2019</p></center>
-
-            </div>
-            <!-- -------------Get in touch-------- -->
-            <div id="contactPage" class="div17 container">
-                    <h2 class="pt-5">GET IN TOUCH</h2>
-                    
-                    <center><img src="./Image/line-break/line-break-10.svg" width="12%" alt=""></center>
-                    <div  class="row">
-                    <div id="one" class="col-lg-8 col-md-10 col-sm-12">
-                       <img src="./Image/icon/profile.png" alt=""> <input type="text" class="txt1" placeholder=" Name"><br>
-                       <img src="./Image/icon/send-mail.png" alt=""> <input type="text" class="txt2" placeholder=" Email"><br>
-                       <img src="./Image/icon/message-closed-envelope.png" style="margin-left:9%;margin-top:-8rem;" alt=""> <textarea cols="2" rows="3" placeholder=" Write Message Here....."></textarea><br>
-                        <input type="button" value="Send Message">
-                    </div>
-                    <div id="two" class="col-lg-4 mt-5 pt-3">
-                            <img src="./Image/icon/maps-and-flags.png" alt=""><span class="ml-2">2nd Stage KHB Colony Basaweshwara Nagara Bangalore, Karnataka</span><br><br>
-                            <img src="./Image/icon/phone-receiver.png" alt=""><span class="ml-2">+91-9113690491</span><br><br>
-                            <img src="./Image/icon/paper-plane.png" alt=""><span class="ml-1">sushantkulkarni44@gmail.com</span><br><br><br>
-                            <img src="./Image/icon/facebook (2).png" width="42px" height="42px" alt="" class="ml-2" style="box-shadow:0px 1px 10px gray; border-radius:25px">
-                            <img src="./Image/icon/twitter.png" width="42px" height="42px" alt="" class="ml-2" style="box-shadow:0px 1px 10px gray; border-radius:25px">
-                            <img src="./Image/icon/instagram-logo.png" width="42px" height="42px" alt="" class="ml-2" style="box-shadow:0px 1px 10px gray; border-radius:25px">
-                            <img src="./Image/icon/youtube-logotype.png" width="42px" height="42px" alt="" class="ml-2" style="box-shadow:0px 1px 10px gray; border-radius:25px">
-                    </div>
-                    </div>
-            </div>
-            
- 
- <script>
-        // $(".range").counterUp({delay:10, time:2000});
-
-        $(document).ready(function(){
+$(document).ready(function(){
       $(".button").click(function(){
         var value = $(this).attr("data-filter");
         if (value =="all")
         {
-          $(".filter").show("1000");
+          $(".filter").show("10").addClass("scale1");
         }
         else
-        {
-          $(".filter").not("."+value).hide("1000");
-          $(".filter").filter("."+value).show("1000");
+        {""
+          $(".filter").not("."+value).hide("1000").addClass("scale2");
+          $(".filter").filter("."+value).show("10").addClass("scale1");
         }
         $("ul .button").click(function(){
           $(this).addClass('active').siblings().removeClass('active');
@@ -934,142 +1513,147 @@ setTimeout(hideLoader, 20 * 1000);
       })
     })
 
-
-
-
-
     function hover1()
     {
-        document.getElementById("se1").style.color="white";
+        document.getElementById("search1").style.color="white";
+        document.getElementById("p1").style.color = "white";
+        document.getElementById("sp1").style.color = "white";
+        
+    }
+    function out1()
+    {
+        document.getElementById("search1").style.color="rgba(252, 252, 252, 0.0)";
+        document.getElementById("p1").style.color = "rgba(252, 252, 252, 0.0)";
+        document.getElementById("sp1").style.color = "rgba(252, 252, 252, 0.0)";
     }
     function hover2()
     {
-        document.getElementById("se1").style.color="rgba(252, 252, 252, 0.0)";
+        document.getElementById("search2").style.color="white";
+        document.getElementById("p2").style.color = "white";
+        document.getElementById("sp2").style.color = "white";
+    }
+    function out2()
+    {
+        document.getElementById("search2").style.color="rgba(252, 252, 252, 0.0)";
+        document.getElementById("p2").style.color = "rgba(252, 252, 252, 0.0)";
+        document.getElementById("sp2").style.color = "rgba(252, 252, 252, 0.0)";
+        
     }
     function hover3()
     {
-        document.getElementById("se2").style.color="white";
+        document.getElementById("search3").style.color="white";
+        document.getElementById("p3").style.color = "white";
+        document.getElementById("sp3").style.color = "white";
+    }
+    function out3()
+    {
+        document.getElementById("search3").style.color="rgba(252, 252, 252, 0.0)";
+        document.getElementById("p3").style.color = "rgba(252, 252, 252, 0.0)";
+        document.getElementById("sp3").style.color = "rgba(252, 252, 252, 0.0)";
     }
     function hover4()
     {
-        document.getElementById("se2").style.color="rgba(252, 252, 252, 0.0)";
+        document.getElementById("search4").style.color="white";
+        document.getElementById("p4").style.color = "white";
+        document.getElementById("sp4").style.color = "white";
+    }
+    function out4()
+    {
+        document.getElementById("search4").style.color="rgba(252, 252, 252, 0.0)";
+        document.getElementById("p4").style.color = "rgba(252, 252, 252, 0.0)";
+        document.getElementById("sp4").style.color = "rgba(252, 252, 252, 0.0)";
     }
     function hover5()
     {
-        document.getElementById("se3").style.color="white";
+        document.getElementById("search5").style.color="white";
+        document.getElementById("p5").style.color = "white";
+        document.getElementById("sp5").style.color = "white";
+    }
+    function out5()
+    {
+        document.getElementById("search5").style.color="rgba(252, 252, 252, 0.0)";
+        document.getElementById("p5").style.color = "rgba(252, 252, 252, 0.0)";
+        document.getElementById("sp5").style.color = "rgba(252, 252, 252, 0.0)";
     }
     function hover6()
     {
-        document.getElementById("se3").style.color="rgba(252, 252, 252, 0.0)";
+        document.getElementById("search6").style.color="white";
+        document.getElementById("p6").style.color = "white";
+        document.getElementById("sp6").style.color = "white";
+    }
+    function out6()
+    {
+        document.getElementById("search6").style.color="rgba(252, 252, 252, 0.0)";
+        document.getElementById("p6").style.color = "rgba(252, 252, 252, 0.0)";
+        document.getElementById("sp6").style.color = "rgba(252, 252, 252, 0.0)";
     }
     function hover7()
     {
-        document.getElementById("se4").style.color="white";
+        document.getElementById("search7").style.color="white";
+        document.getElementById("p7").style.color = "white";
+        document.getElementById("sp7").style.color = "white";
+    }
+    function out7()
+    {
+        document.getElementById("search7").style.color="rgba(252, 252, 252, 0.0)";
+        document.getElementById("p7").style.color = "rgba(252, 252, 252, 0.0)";
+        document.getElementById("sp7").style.color = "rgba(252, 252, 252, 0.0)";
     }
     function hover8()
     {
-        document.getElementById("se4").style.color="rgba(252, 252, 252, 0.0)";
+        document.getElementById("search8").style.color="white";
+        document.getElementById("p8").style.color = "white";
+        document.getElementById("sp8").style.color = "white";
     }
-    function hover9()
+    function out8()
     {
-        document.getElementById("se5").style.color="white";
+        document.getElementById("search8").style.color="rgba(252, 252, 252, 0.0)";
+        document.getElementById("p8").style.color = "rgba(252, 252, 252, 0.0)";
+        document.getElementById("sp8").style.color = "rgba(252, 252, 252, 0.0)";
     }
-    function hover10()
-    {
-        document.getElementById("se5").style.color="rgba(252, 252, 252, 0.0)";
-    }
-    function hover11()
-    {
-        document.getElementById("se6").style.color="white";
-    }
-    function hover12()
-    {
-        document.getElementById("se6").style.color="rgba(252, 252, 252, 0.0)";
-    }
-    function hover13()
-    {
-        document.getElementById("se7").style.color="white";
-    }
-    function hover14()
-    {
-        document.getElementById("se7").style.color="rgba(252, 252, 252, 0.0)";
-    }
-    function hover15()
-    {
-        document.getElementById("se8").style.color="white";
-    }
-    function hover16()
-    {
-        document.getElementById("se8").style.color="rgba(252, 252, 252, 0.0)";
-    }
-    function hover17()
-    {
-        document.getElementById("se9").style.color="white";
-    }
-    function hover18()
-    {
-        document.getElementById("se9").style.color="rgba(252, 252, 252, 0.0)";
-    }
-    
-
-
-
 
 
     function myMap() {
 var mapProp= {
-  center:new google.maps.LatLng(12.972442,77.580643),
-  zoom:15,
+  center:new google.maps.LatLng(12.984618,77.538284),
+  zoom:16.5
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 
 
 
-
-
+// Navbar scrolling
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    document.getElementById("navbar").style.padding = "10px 10px";
-    // document.getElementById("logo").style.fontSize = "25px";
-    document.getElementById("navbar").style.backgroundColor = "rgb(46, 1, 36)"
-    document.getElementById("navbar").style.borderRadius = "10px 10px 10px oranged";
-  } else {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) 
+  {
+    document.getElementById("navbar").style.padding = "30px 30px";
+    document.getElementById("navbar").style.fontSize = "25px";
+    document.getElementById("navbar").style.backgroundColor = "rgba(4, 37, 90)";
+    document.getElementsByClassName("nav-link").style.color = "black";
+    
+  } 
+  else  
+  {
     document.getElementById("navbar").style.padding = "10px 10px";
     document.getElementById("logo").style.fontSize = "35px";
-    document.getElementById("navbar").style.backgroundColor = ""
-    document.getElementById("navbar").style.backgroundColor = "oranged";
+    document.getElementById("navbar").style.backgroundColor = "rgba(4, 37, 90, 0)"
+    
   }
 }
 
+</script>   
 
-
-
-
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7pjwcCEgbHYsS3TISDe9iiQgTA2irFwk&callback=myMap"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="C:\WSA_Bootstrap_Course_Material\TemplatePrograms\jquery\jquery-3.3.1.slim.min.js"></script>
-    <script src="C:\WSA_Bootstrap_Course_Material\TemplatePrograms\popper.js\1.13.0"></script>
-    <script src="C:\WSA_Bootstrap_Course_Material\TemplatePrograms\js\bootstrap.min.js"></script>
 </body>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7pjwcCEgbHYsS3TISDe9iiQgTA2irFwk&callback=myMap"></script>
 </html>
