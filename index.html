@@ -298,132 +298,6 @@
 
 <script>
     // List of sentences
-var _CONTENT = [ 
-	"Front-End Web Developer....!", 
-	" Lives In Bangalore." 
-	
-];
-
-// Current sentence being processed
-var _PART = 0;
-
-// Character number of the current sentence being processed 
-var _PART_INDEX = 0;
-
-// Holds the handle returned from setInterval
-var _INTERVAL_VAL;
-
-// Element that holds the text
-var _ELEMENT = document.querySelector("#text");
-
-// Cursor element 
-var _CURSOR = document.querySelector("#cursor");
-
-// Implements typing effect
-function Type() { 
-	// Get substring with 1 characater added
-	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
-	_ELEMENT.innerHTML = text;
-	_PART_INDEX++;
-
-	// If full sentence has been displayed then start to delete the sentence after some time
-	if(text === _CONTENT[_PART]) {
-		// Hide the cursor
-		_CURSOR.style.display = 'none';
-
-		clearInterval(_INTERVAL_VAL);
-		setTimeout(function() {
-			_INTERVAL_VAL = setInterval(Delete, 50);
-		}, 1000);
-	}
-}
-
-// Implements deleting effect
-function Delete() {
-	// Get substring with 1 characater deleted
-	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
-	_ELEMENT.innerHTML = text;
-	_PART_INDEX--;
-
-	// If sentence has been deleted then start to display the next sentence
-	if(text === '') {
-		clearInterval(_INTERVAL_VAL);
-
-		// If current sentence was last then display the first one, else move to the next
-		if(_PART == (_CONTENT.length - 1))
-			_PART = 0;
-		else
-			_PART++;
-		
-		_PART_INDEX = 0;
-
-		// Start to display the next sentence after some time
-		setTimeout(function() {
-			_CURSOR.style.display = 'inline-block';
-			_INTERVAL_VAL = setInterval(Type, 100);
-		}, 200);
-	}
-}
-
-// Start the typing effect on load
-_INTERVAL_VAL = setInterval(Type, 100);
-
-$(document) .ready(function(){
-    $(".navbar-brand").mouseover(function(){
-        $(".navbar-brand").addClass("animate_1");
-    })
-})
-
-
-$(document).scroll(function(){
-    var a = $(this).scrollTop();
-    if(a>200)
-    {
-        $(".para1").addClass("animatea").fadeIn(2000);
-        $("#myphoto").addClass("animatec").fadeIn(2000);
-    }
-    else
-    {
-        $(".para1").fadeOut(1000);
-        $("#myphoto").fadeOut(1000);
-    }
-
-    if(a>600)
-    {
-        $(".my_details").addClass("animateb").fadeIn(2000);
-    }
-    else
-    {
-        $(".my_details").fadeOut(1000);
-    }
-
-    
-
-})
-
-$(document).scroll(function(){
-    var b = $(this).scrollTop();
-    if(b>800)
-    {
-        $(".progress-bar1").addClass("animated").fadeIn(1000);
-        $(".progress-bar2").addClass("animatee").fadeIn(1000);
-        $(".progress-bar3").addClass("animatef").fadeIn(1000);
-        $(".progress-bar4").addClass("animateg").fadeIn(1000);
-        $(".progress-bar5").addClass("animateh").fadeIn(1000);
-        $(".progress-bar6").addClass("animatei").fadeIn(1000);
-
-    }
-    else
-    {
-        $(".progress-bar").fadeOut(1000);
-    }
-    
-    
-})
-
-
-$(".Count").counterUp({delay:10,time:1000});
-
 
 
 
@@ -545,36 +419,11 @@ $(document).ready(function(){
     }
 
 
-    function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(12.984618,77.538284),
-  zoom:16.5
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
+  
 
 
 
-// Navbar scrolling
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) 
-  {
-    document.getElementById("navbar").style.padding = "30px 30px";
-    document.getElementById("navbar").style.fontSize = "25px";
-    document.getElementById("navbar").style.backgroundColor = "rgba(4, 37, 90)";
-    document.getElementsByClassName("nav-link").style.color = "black";
-    
-  } 
-  else  
-  {
-    document.getElementById("navbar").style.padding = "10px 10px";
-    document.getElementById("logo").style.fontSize = "35px";
-    document.getElementById("navbar").style.backgroundColor = "rgba(4, 37, 90, 0)"
-    
-  }
-}
 
 </script>   
 
