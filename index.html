@@ -351,8 +351,8 @@ ul > li > a
 {
     width: 100%;
     min-height: 110vh;
-    background-color: black;
-    opacity: 0.9;
+    background-color: rgb(0, 0, 0, 0.9);
+    opacity: 1;
     
 }
 .div2 h1
@@ -1000,6 +1000,7 @@ ul > li > a
     cursor: pointer;
     /* font-family: Arial, Helvetica, sans-serif; */
     text-decoration: none;
+    z-index: 1;
 }
 .mycv::before
 {
@@ -1011,7 +1012,7 @@ ul > li > a
     overflow: hidden;
     transition: all 0.6s ease;
     transform: translate(-50%, -50%) rotate(0deg) ;
-    z-index: -1;
+    z-index:   -1;
     transition: all 0.6s ease;
 }
 .mycv1::before
@@ -1023,12 +1024,14 @@ ul > li > a
 {
     width: 100%;
     /* color: black; */
+    /* color: black; */
 }
 .mycv:hover
 {
     color:black;
     font-weight: bold;
     text-decoration: none;
+    
 }
 
 </style>
