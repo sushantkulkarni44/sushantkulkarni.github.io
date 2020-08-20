@@ -22,6 +22,10 @@
     <link href="https://fonts.googleapis.com/css?family=Carter+One|Great+Vibes|Kaushan+Script|Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Carter+One|Great+Vibes|Kaushan+Script|Lobster|Pacifico" rel="stylesheet">
     <style>
+    html
+    {
+        scroll-behavior:smooth;
+    }
     .bg-black
     {
         background-color: black;
@@ -29,12 +33,102 @@
     *
     {
         font-size: 16px;
+        padding: 0;
+        /* margin: 0; */
     }
     .margin-5
     {
         margin-left:40vw;
         border: 1px solid white;  
     }
+    nav ul li a 
+        {
+            text-decoration: none;
+            color: rgb(192, 188, 188);
+            position: relative;
+        }
+    nav ul li a:before 
+        {
+            position: absolute;
+            content: '';
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            left: 0;
+            bottom: 0;
+            margin-bottom: -7px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: 0.6s transform ;
+            
+            
+        }
+        nav ul li a:hover:before, nav ul li a:active 
+        {
+            transform-origin: left;
+            transform: scaleX(1);
+            transition: 0.6s transform ;
+            
+        }
+        nav > a
+        {
+            
+            margin:0 0 0 25px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display:inline-block;
+            animation-name: logoanimate;
+            animation-duration: 0.15s;
+            animation-iteration-count: infinite;
+            /* float: left; */
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            color: white;
+            
+        }
+        nav > a:hover
+        {
+            color: white;
+            text-decoration: none;
+        }
+        nav>a::first-letter
+        {
+            /* text-align: start; */
+            font-size: 30px;
+            color: rgb(255, 102, 0);
+            padding-left: 10px;
+            padding-right:10px ;
+            border: 3px solid cyan;
+            background-color: rgb(0, 0, 0);
+            font-weight: bold;
+            border-radius: 100px;
+            animation-name: logoanimate2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* transform: translateY(-50px); */
+        }
+        @keyframes logoanimate2 
+        {
+            0%
+            {
+                transform: rotate(0deg) ;
+            }
+            100%
+            {
+                transform: rotate(180deg) ;
+            }
+        }
+        @keyframes logoanimate
+        {
+            0%
+            {
+                transform: translate(0px) ;
+            }
+            100%
+            {
+                transform: translateX(10px) rotate3d(1,1,1,30deg) ;
+            }
+        }
     .myvideo
     {
     position: relative;
@@ -322,11 +416,7 @@ ul > li > a
         color: red;
     }
 }
-#mymenu ul li a:hover
-{
-    border-bottom: 2px solid white;
-    /* transition: 1s; */
-}
+
 
 .sect2
 {
@@ -1034,21 +1124,26 @@ ul > li > a
     
 }
 
+.nav-colored
+{
+    background-color: blue;
+}
+
 </style>
 </head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <body>
         
     <nav id="navbar" class="navbar navbar-dark navbar-expand-lg  p-0 sticky-top">
-        <a href="" class="navbar-brand ml-3"> <img src="./video/images.jpg" alt="" width="150px"></a>
+        <a href="" class="navbar-bran ml-3">SUSHANT</a>
 
-        <button type="button" class="navbar-toggler" data-target="#mymenu"  aria-controls="mymenu" data-toggle="collapse">
-            <span class="navbar-toggler-icon"> </span>
-        </button>
-        <div id="mymenu" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav p-2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mymenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="mymenu" >
+            <ul class="navbar-nav p-2">
                 <li class="nav-item ">
-                    <a href="" id="nav-link" class="nav-link ml-3 active">HOME</a>
+                    <a href="" id="nav-link" class="nav-link ml-3">HOME</a>
                 </li>
                 <li class="nav-item">
                        <a href="#div2" class="nav-link ml-3">ABOUT</a>
@@ -1110,7 +1205,7 @@ ul > li > a
             <div class="col-md-7" id="para1">
                 <p class="para1">I am <span>SUSHANT KULKARNI</span> . I am a Front end web Developer in Bangalore, India. I am graduate Computer Application(BCA) at SSBCA degree collage Gokak,Karnataka and perceived Corporate Front End Web Developer training at WebStack Academy,Bangalore, Also enhancing knowledge and building designing & developement capabilities through day-to-day project experiences.</p>
                 <section class="my_details">
-                <span>AGE : </span> 25<br>
+                <span>AGE : </span> 26<br>
                 <Span>ADDRESS : </Span> Gokak, Karnataka<br>
                 <span>EMAIL : </span> sushantkulkarni44@gmail.com<br>
                 <span>PHONE : </span> +91-9113690491<br>
@@ -1633,22 +1728,26 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) 
+  if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) 
   {
     document.getElementById("navbar").style.padding = "30px 30px";
     document.getElementById("navbar").style.fontSize = "25px";
-    document.getElementById("navbar").style.backgroundColor = "rgba(4, 37, 90)";
+    document.getElementById("navbar").style.backgroundColor="rgba(4, 37, 90, 0.8)";
     document.getElementsByClassName("nav-link").style.color = "black";
     
   } 
-  else  
+ else 
   {
     document.getElementById("navbar").style.padding = "10px 10px";
     document.getElementById("logo").style.fontSize = "35px";
-    document.getElementById("navbar").style.backgroundColor = "rgba(4, 37, 90, 0)"
+    document.getElementById("navbar").style.backgroundColor="rgba(4, 37, 90, 0)";
     
   }
 }
+
+
+
+
 
 </script>   
 
